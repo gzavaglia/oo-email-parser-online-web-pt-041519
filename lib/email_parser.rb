@@ -11,11 +11,12 @@ class EmailParser
   end
   
   def parse
+    email_array = []
     # emails.split.collect do |address|
     #   address.split(',') 
     # end
     # .flatten.uniq 
     delimiters = [', ', " "]
-    emails.split(',')
+    email_array = self.split(Regexp.union(delimiters))
   end #parse method
 end #Class 

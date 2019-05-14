@@ -8,7 +8,7 @@ class EmailParser
     @emails = data
   end
   
-  def parse
-    @emails.parse
+  def parse(mail)
+    mail.parse
   end #parse method
 end #Class 

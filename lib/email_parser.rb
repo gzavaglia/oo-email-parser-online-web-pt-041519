@@ -18,5 +18,6 @@ class EmailParser
     # .flatten.uniq 
     delimiters = [', ', " "]
     email_array = @emails.split(Regexp.union(delimiters))
+    email_array.flatten.uniq 
   end #parse method
 end #Class 

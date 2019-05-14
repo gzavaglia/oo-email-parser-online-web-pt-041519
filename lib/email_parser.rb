@@ -9,7 +9,9 @@ class EmailParser
   end
   
   def parse
-    email_array = self.split(", ")
-    return email_array
+    csv_emails.split.collect do |address|
+      address.split(',') 
+    end
+    .flatten.uniq 
   end #parse method
 end #Class 

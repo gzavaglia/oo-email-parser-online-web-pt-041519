@@ -15,6 +15,7 @@ class EmailParser
     #   address.split(',') 
     # end
     # .flatten.uniq 
+    delimiters = [', ', " "]
     emails.split(',')
   end #parse method
 end #Class 

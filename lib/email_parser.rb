@@ -9,6 +9,6 @@ class EmailParser
   end
   
   def parse
-    @email
+    @email.split(", ")
   end #parse method
 end #Class 
